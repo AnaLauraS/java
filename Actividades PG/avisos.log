@@ -1,0 +1,811 @@
+[2022-05-26 22:44:45] [ INFO ] [ListaPromedio:19] La longitud de la lista es mayor a 5
+[2022-05-26 22:44:45] [ ERROR] [Main:18] La lista es igual a 0
+[2022-05-26 22:56:43] [ INFO ] [ListaPromedio:19] La longitud de la lista es mayor a 5
+[2022-05-26 22:56:43] [ ERROR] [Main:17] La lista es igual a 0
+java.lang.Exception
+	at clase10.ListaPromedio.<init>(ListaPromedio.java:23)
+	at clase10.Main.main(Main.java:15)
+[2022-05-26 23:06:27] [ INFO ] [ListaPromedio:19] La longitud de la lista es mayor a 5
+[2022-05-26 23:06:27] [ ERROR] [Main:16] La lista es igual a 0
+java.lang.Exception
+	at clase10.ListaPromedio.<init>(ListaPromedio.java:23)
+	at clase10.Main.main(Main.java:13)
+[2022-05-26 23:07:54] [ INFO ] [ListaPromedio:19] La longitud de la lista es mayor a 5
+[2022-05-26 23:07:54] [ ERROR] [Main:17] La lista es igual a 0
+java.lang.Exception
+	at clase10.ListaPromedio.<init>(ListaPromedio.java:23)
+	at clase10.Main.main(Main.java:13)
+[2022-05-26 23:08:13] [ INFO ] [ListaPromedio:19] La longitud de la lista es mayor a 5
+[2022-05-26 23:08:13] [ INFO ] [Main:15] El minimo de la lista es 1
+[2022-05-26 23:09:05] [ INFO ] [ListaPromedio:19] La longitud de la lista es mayor a 5
+[2022-05-26 23:09:05] [ INFO ] [Main:15] El minimo de la lista es 1
+[2022-05-26 23:09:05] [ INFO ] [Main:17] El máximo de la lista es 8
+[2022-05-26 23:21:18] [ INFO ] [ListaPromedio:19] La longitud de la lista es mayor a 5
+[2022-05-26 23:21:18] [ INFO ] [Main:15] El minimo de la lista es 1
+[2022-05-26 23:21:18] [ INFO ] [Main:17] El máximo de la lista es 8
+[2022-05-26 23:21:18] [ INFO ] [Main:18] El promedio de la lista es 4.5
+[2022-05-27 21:40:27] [ INFO ] [Base1:48] creamos la conexión a la base de datos
+[2022-05-27 21:40:27] [ ERROR] [Base1:53] Algo salio mal: 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "FIGURAS" no encontrada
+Table "FIGURAS" not found; SQL statement:
+SELECT * FROM FIGURAS [42102-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8376)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8347)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8336)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1883)
+	at org.h2.command.Parser.readTableReference(Parser.java:2359)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2810)
+	at org.h2.command.Parser.parseSelect(Parser.java:2917)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2800)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2667)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2646)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2639)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2632)
+	at org.h2.command.Parser.parseQuery(Parser.java:2593)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:92)
+	at clase11.Base1.verQuery(Base1.java:38)
+	at clase11.Base1.main(Base1.java:49)
+[2022-05-27 21:42:11] [ INFO ] [Base1:55] creamos la conexión a la base de datos
+[2022-05-27 21:54:22] [ ERROR] [Base1:67] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:1 */ 1, 'legajo1', 'rojo', 41, TRUE)"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:1 */ 1, 'legajo1', 'rojo', 41, TRUE)"; SQL statement:
+INSERT INTO EMPLEADOS (ID, LEGAJO, COLORDEPELO, TALLEZAPATILLA, TIENEHIJOS) VALUES (1,'legajo2','verde', 36, false) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at clase12.Base2.main(Base2.java:59)
+[2022-05-27 22:00:10] [ INFO ] [Base1:64] creamos la conexión a la base de datos
+[2022-05-27 22:00:10] [ DEBUG] [Base1:68] 3 legajo3 rubio 40 true
+[2022-05-27 22:01:50] [ INFO ] [Base1:64] creamos la conexión a la base de datos
+[2022-05-27 22:01:50] [ DEBUG] [Base1:68] 3 legajo3 rubio 40 true
+
+[2022-05-27 22:02:52] [ INFO ] [Base1:64] creamos la conexión a la base de datos
+[2022-05-27 22:02:52] [ DEBUG] [Base1:68] 3 legajo3 rubio 40 true
+
+[2022-05-27 22:02:52] [ INFO ] [Base1:72] 
+[2022-05-30 20:18:45] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:18:45] [ ERROR] [Base3:74] Algo salio mal: 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "MATRICULA" no encontrada
+Column "MATRICULA" not found; SQL statement:
+INSERT INTO ODONTOLOGOS (ID, APELLIDO, NOMBRE, MATRICULA) VALUES (?, ?, ?, ?) [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:754)
+	at org.h2.command.Parser.parseColumn(Parser.java:1264)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1249)
+	at org.h2.command.Parser.parseInsert(Parser.java:1650)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at clase13.Base3.main(Base3.java:54)
+[2022-05-30 20:19:16] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:19:16] [ ERROR] [Base3:74] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'Mt001')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'Mt001')"; SQL statement:
+INSERT INTO ODONTOLOGOS (ID, APELLIDO, NOMBRE, MATRICULA) VALUES (?, ?, ?, ?) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:66)
+[2022-05-30 20:24:32] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:24:32] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'Mt001')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'Mt001')"; SQL statement:
+INSERT INTO ODONTOLOGOS (ID, APELLIDO, NOMBRE, MATRICULA) VALUES (?, ?, ?, ?) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:25:19] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:25:19] [ DEBUG] [Base3:69] 
+[2022-05-30 20:25:46] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:25:46] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'Mt001')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'Mt001')"; SQL statement:
+INSERT INTO ODONTOLOGOS (ID, APELLIDO, NOMBRE, MATRICULA) VALUES (?, ?, ?, ?) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:26:11] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:26:11] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:10 */ 10, 'Gonzalez', 'Carlos', 'Mt001')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:10 */ 10, 'Gonzalez', 'Carlos', 'Mt001')"; SQL statement:
+INSERT INTO ODONTOLOGOS (ID, APELLIDO, NOMBRE, MATRICULA) VALUES (?, ?, ?, ?) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:26:43] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:26:43] [ DEBUG] [Base3:69] 
+[2022-05-30 20:32:31] [ INFO ] [Base3:52] creamos la conexión a la base de datos
+[2022-05-30 20:32:31] [ ERROR] [Base3:76] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'mt001')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'mt001')"; SQL statement:
+INSERT INTO ODONTOLOGOS (ID, APELLIDO, NOMBRE, MATRICULA) VALUES (?, ?, ?, ?) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:68)
+[2022-05-30 20:34:52] [ INFO ] [Base3:52] creamos la conexión a la base de datos
+[2022-05-30 20:34:52] [ ERROR] [Base3:76] Algo salio mal: 
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "mt001"
+Data conversion error converting "mt001" [22018-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at clase13.Base3.verQuery(Base3.java:40)
+	at clase13.Base3.main(Base3.java:62)
+Caused by: java.lang.NumberFormatException: For input string: "mt001"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2022-05-30 20:35:43] [ INFO ] [Base3:52] creamos la conexión a la base de datos
+[2022-05-30 20:35:43] [ ERROR] [Base3:76] Algo salio mal: 
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "mt001"
+Data conversion error converting "mt001" [22018-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at clase13.Base3.verQuery(Base3.java:40)
+	at clase13.Base3.main(Base3.java:62)
+Caused by: java.lang.NumberFormatException: For input string: "mt001"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2022-05-30 20:39:03] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:39:03] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "mtZ"
+Data conversion error converting "mtZ" [22018-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at clase13.Base3.verQuery(Base3.java:39)
+	at clase13.Base3.main(Base3.java:61)
+Caused by: java.lang.NumberFormatException: For input string: "mtZ"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2022-05-30 20:40:01] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:40:01] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "mtZ"
+Data conversion error converting "mtZ" [22018-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at clase13.Base3.verQuery(Base3.java:39)
+	at clase13.Base3.main(Base3.java:61)
+Caused by: java.lang.NumberFormatException: For input string: "mtZ"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2022-05-30 20:40:19] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:40:19] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', '007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', '007')"; SQL statement:
+INSERT INTO ODONTOLOGOS (ID, APELLIDO, NOMBRE, MATRICULA) VALUES (?, ?, ?, ?) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:40:19] [ DEBUG] [Base3:76] 1 Gonzalez Carlos 7
+
+[2022-05-30 20:43:41] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:43:41] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "mt002"
+Data conversion error converting "mt002" [22018-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at clase13.Base3.verQuery(Base3.java:39)
+	at clase13.Base3.main(Base3.java:61)
+Caused by: java.lang.NumberFormatException: For input string: "mt002"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2022-05-30 20:46:43] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:46:43] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "m007"
+Data conversion error converting "m007" [22018-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at clase13.Base3.verQuery(Base3.java:39)
+	at clase13.Base3.main(Base3.java:62)
+Caused by: java.lang.NumberFormatException: For input string: "m007"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2022-05-30 20:47:11] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:47:11] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "m007"
+Data conversion error converting "m007" [22018-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at clase13.Base3.verQuery(Base3.java:39)
+	at clase13.Base3.main(Base3.java:62)
+Caused by: java.lang.NumberFormatException: For input string: "m007"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2022-05-30 20:47:26] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:47:26] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "m007"
+Data conversion error converting "m007" [22018-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:133)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:348)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at clase13.Base3.verQuery(Base3.java:39)
+	at clase13.Base3.main(Base3.java:62)
+Caused by: java.lang.NumberFormatException: For input string: "m007"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.ValueStringBase.getInt(ValueStringBase.java:131)
+	... 4 more
+[2022-05-30 20:48:20] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:48:20] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:48:20] [ DEBUG] [Base3:76] 1 Gonzalez Carlos m007
+
+[2022-05-30 20:50:35] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:50:35] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:50:35] [ DEBUG] [Base3:76] 1 Gonzalez Carlos m007
+
+[2022-05-30 20:51:44] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:51:44] [ DEBUG] [Base3:76] 1 Gonzalez Carlos m007
+
+[2022-05-30 20:52:03] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:52:03] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:52:03] [ DEBUG] [Base3:76] 1 Gonzalez Carlos m007
+
+[2022-05-30 20:52:13] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:52:13] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:52:13] [ DEBUG] [Base3:76] 1 Gonzalez Carlos m007
+
+[2022-05-30 20:52:26] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:52:26] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:52:26] [ DEBUG] [Base3:76] 1 Gonzalez Carlos m007
+
+[2022-05-30 20:54:34] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:54:34] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:54:34] [ DEBUG] [Base3:76] 1 Gonzalez Carlos m007
+
+[2022-05-30 20:55:09] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:55:09] [ ERROR] [Base3:75] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:254)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:55:09] [ DEBUG] [Base3:76] 1 Gonzalez Carlos m007
+
+[2022-05-30 20:55:36] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:55:36] [ ERROR] [Base3:76] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:67)
+[2022-05-30 20:55:36] [ DEBUG] [Base3:77] 
+[2022-05-30 20:58:31] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:58:31] [ ERROR] [Base3:77] Algo salio mal: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ODONTOLOGOS(ID) ( /* key:1 */ 1, 'Gonzalez', 'Carlos', 'm007')"; SQL statement:
+INSERT INTO ODONTOLOGOS ( ID, APELLIDO, NOMBRE, MATRICULA ) VALUES ( ?, ?, ?, ? ) [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at clase13.Base3.main(Base3.java:68)
+[2022-05-30 20:58:31] [ DEBUG] [Base3:78] 
+[2022-05-30 20:58:52] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:58:52] [ DEBUG] [Base3:70] 1 Gonzalez Carlos Mt2
+
+[2022-05-30 20:59:03] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:59:03] [ DEBUG] [Base3:69] 1 Gonzalez Carlos Mt2
+
+[2022-05-30 20:59:43] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 20:59:43] [ DEBUG] [Base3:69] Actualizamos datos: 1 Gonzalez Carlos Mt2
+
+[2022-05-30 21:08:59] [ INFO ] [Base3:52] creamos la conexión a la base de datos
+[2022-05-30 21:08:59] [ DEBUG] [Base3:76] Actualizamos datos: 1 Gonzalez Carlos Mt2
+2 Otro Fulano sinMatri
+
+[2022-05-30 21:09:22] [ INFO ] [Base3:52] creamos la conexión a la base de datos
+[2022-05-30 21:09:22] [ DEBUG] [Base3:76] Actualizamos datos: 
+1 Gonzalez Carlos Mt2
+2 Otro Fulano sinMatri
+
+[2022-05-30 21:11:18] [ INFO ] [Base3:51] creamos la conexión a la base de datos
+[2022-05-30 21:11:18] [ DEBUG] [Base3:75] Actualizamos datos: 
+1 Gonzalez Carlos Mt2
+2 Otro Fulano sinMatri
+
+[2022-06-02 23:58:28] [ INFO ] [PacienteDaoH2:67] Conexión a la base de datos realizada
+[2022-06-02 23:58:28] [ INFO ] [DomicilioDaoH2:61] Conexión a la base de datos realizada
+[2022-06-02 23:58:28] [ ERROR] [DomicilioDaoH2:79] Error al hacer la query: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "ID" no permite valores nulos (NULL)
+NULL not allowed for column "ID"; SQL statement:
+INSERT INTO domicilios (calle, numero, localidad, provincia) VALUES (?,?,?,?) [23502-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:931)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:247)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:168)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at Clase15.dao.DomicilioDaoH2.guardar(DomicilioDaoH2.java:71)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:71)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:11)
+	at Clase15.service.PacienteService.guardar(PacienteService.java:16)
+	at Clase15.Main.main(Main.java:17)
+[2022-06-02 23:58:28] [ ERROR] [PacienteDaoH2:91] Error al hacer la query: 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PACIENTES" no encontrada
+Table "PACIENTES" not found; SQL statement:
+INSERT INTO pacientes (nombre,apellido,dni,fecha_ingreso,domicilio_id) VALUES (?,?,?,?,?) [42102-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8376)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8347)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8336)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8306)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:75)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:11)
+	at Clase15.service.PacienteService.guardar(PacienteService.java:16)
+	at Clase15.Main.main(Main.java:17)
+[2022-06-02 23:58:28] [ INFO ] [PacienteDaoH2:30] Conexión a la base de datos realizada
+[2022-06-02 23:58:28] [ ERROR] [PacienteDaoH2:49] Error al hacer la query: 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PACIENTES" no encontrada
+Table "PACIENTES" not found; SQL statement:
+SELECT * FROM pacientes [42102-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8376)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8347)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8336)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1883)
+	at org.h2.command.Parser.readTableReference(Parser.java:2359)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2810)
+	at org.h2.command.Parser.parseSelect(Parser.java:2917)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2800)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2667)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2646)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2639)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2632)
+	at org.h2.command.Parser.parseQuery(Parser.java:2593)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at Clase15.dao.PacienteDaoH2.buscarTodos(PacienteDaoH2.java:33)
+	at Clase15.service.PacienteService.buscartodos(PacienteService.java:18)
+	at Clase15.Main.main(Main.java:19)
+[2022-06-02 23:58:56] [ INFO ] [PacienteDaoH2:67] Conexión a la base de datos realizada
+[2022-06-02 23:58:56] [ INFO ] [DomicilioDaoH2:61] Conexión a la base de datos realizada
+[2022-06-02 23:58:56] [ ERROR] [DomicilioDaoH2:79] Error al hacer la query: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "ID" no permite valores nulos (NULL)
+NULL not allowed for column "ID"; SQL statement:
+INSERT INTO domicilios (calle, numero, localidad, provincia) VALUES (?,?,?,?) [23502-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:931)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:247)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:168)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at Clase15.dao.DomicilioDaoH2.guardar(DomicilioDaoH2.java:71)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:71)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:11)
+	at Clase15.service.PacienteService.guardar(PacienteService.java:16)
+	at Clase15.Main.main(Main.java:17)
+[2022-06-02 23:58:56] [ ERROR] [PacienteDaoH2:91] Error al hacer la query: 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DOMICILIO_ID" no encontrada
+Column "DOMICILIO_ID" not found; SQL statement:
+INSERT INTO pacientes (nombre,apellido,dni,fecha_ingreso,domicilio_id) VALUES (?,?,?,?,?) [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:754)
+	at org.h2.command.Parser.parseColumn(Parser.java:1264)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1249)
+	at org.h2.command.Parser.parseInsert(Parser.java:1650)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:75)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:11)
+	at Clase15.service.PacienteService.guardar(PacienteService.java:16)
+	at Clase15.Main.main(Main.java:17)
+[2022-06-02 23:58:56] [ INFO ] [PacienteDaoH2:30] Conexión a la base de datos realizada
+[2022-06-03 00:05:31] [ INFO ] [PacienteDaoH2:67] Conexión a la base de datos realizada
+[2022-06-03 00:05:31] [ INFO ] [DomicilioDaoH2:61] Conexión a la base de datos realizada
+[2022-06-03 00:05:31] [ ERROR] [DomicilioDaoH2:79] Error al hacer la query: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "ID" no permite valores nulos (NULL)
+NULL not allowed for column "ID"; SQL statement:
+INSERT INTO domicilios (calle, numero, localidad, provincia) VALUES (?,?,?,?) [23502-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:931)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:247)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:168)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at Clase15.dao.DomicilioDaoH2.guardar(DomicilioDaoH2.java:71)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:71)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:11)
+	at Clase15.service.PacienteService.guardar(PacienteService.java:16)
+	at Clase15.Main.main(Main.java:17)
+[2022-06-03 00:05:31] [ ERROR] [PacienteDaoH2:91] Error al hacer la query: 
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DOMICILIO_ID" no encontrada
+Column "DOMICILIO_ID" not found; SQL statement:
+INSERT INTO pacientes (nombre,apellido,dni,fecha_ingreso,domicilio_id) VALUES (?,?,?,?,?) [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:754)
+	at org.h2.command.Parser.parseColumn(Parser.java:1264)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1249)
+	at org.h2.command.Parser.parseInsert(Parser.java:1650)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1044)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:75)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:11)
+	at Clase15.service.PacienteService.guardar(PacienteService.java:16)
+	at Clase15.Main.main(Main.java:17)
+[2022-06-03 00:05:31] [ INFO ] [PacienteDaoH2:30] Conexión a la base de datos realizada
+[2022-06-03 00:06:29] [ INFO ] [PacienteDaoH2:67] Conexión a la base de datos realizada
+[2022-06-03 00:06:29] [ INFO ] [DomicilioDaoH2:61] Conexión a la base de datos realizada
+[2022-06-03 00:06:29] [ ERROR] [DomicilioDaoH2:79] Error al hacer la query: 
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "ID" no permite valores nulos (NULL)
+NULL not allowed for column "ID"; SQL statement:
+INSERT INTO domicilios (calle, numero, localidad, provincia) VALUES (?,?,?,?) [23502-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:931)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:247)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:168)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at Clase15.dao.DomicilioDaoH2.guardar(DomicilioDaoH2.java:71)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:71)
+	at Clase15.dao.PacienteDaoH2.guardar(PacienteDaoH2.java:11)
+	at Clase15.service.PacienteService.guardar(PacienteService.java:16)
+	at Clase15.Main.main(Main.java:17)
+[2022-06-03 00:06:29] [ INFO ] [PacienteDaoH2:30] Conexión a la base de datos realizada

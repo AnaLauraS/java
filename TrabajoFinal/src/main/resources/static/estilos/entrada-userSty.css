@@ -1,0 +1,87 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #040b18;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ebe18e;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  gap: 20px;
+}
+
+header div button {
+  padding: 5px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: #ebe18e;
+  border: none;
+}
+
+body {
+  background-color: #040b18;
+}
+
+main {
+  max-width: 99vw;
+  height: 92vh;
+  background-image: url(../img/usuario.jpg);
+  background-attachment: fixed;
+  overflow-y: hidden;
+  background-size: cover;
+  padding: 5px;
+  color: #522e0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h2 {
+  padding-top: 14%;
+  font-size: 2.5rem;
+  text-shadow: white -2px -2px 5px;
+}
+
+main div button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #ebe18e;
+  border: none;
+  margin: 20px;
+  margin-top: 40px;
+  font-size: 1.6rem;
+  color: #522e0d;
+}
+/*# sourceMappingURL=entrada-userSty.css.map */

@@ -1,0 +1,19 @@
+[2022-06-22 23:13:31] [ ERROR] [OdontologoController:58] ID incorrecto
+[2022-06-27 19:58:17] [ ERROR] [PacienteController:45] ID incorrecto
+[2022-06-27 21:09:31] [ ERROR] [TurnoController:54] ID incorrecto
+[2022-06-27 21:09:43] [ ERROR] [TurnoController:54] ID incorrecto
+[2022-06-27 21:22:21] [ ERROR] [TurnoController:60] fecha y hora incorrectos
+[2022-06-27 21:25:53] [ ERROR] [TurnoController:60] Turno ocupado
+[2022-06-27 21:26:06] [ ERROR] [TurnoController:60] Turno ocupado
+[2022-07-01 20:35:06] [ ERROR] [OdontologoController:45] ID incorrecto
+[2022-07-01 20:35:51] [ ERROR] [OdontologoController:45] ID incorrecto
+[2022-07-01 20:45:35] [ ERROR] [OdontologoController:58] ID incorrecto
+[2022-07-01 20:49:00] [ ERROR] [OdontologoController:58] ID incorrecto
+[2022-07-01 20:49:17] [ ERROR] [OdontologoController:58] ID incorrecto
+[2022-07-01 20:51:59] [ ERROR] [OdontologoController:68] ID incorrecto
+[2022-07-01 20:52:03] [ ERROR] [OdontologoController:55] ID incorrecto
+[2022-07-01 20:52:04] [ ERROR] [OdontologoController:55] ID incorrecto
+[2022-07-01 20:52:59] [ ERROR] [OdontologoController:45] ID incorrecto
+[2022-07-01 20:53:10] [ ERROR] [OdontologoController:55] ID incorrecto
+[2022-07-04 21:18:57] [ ERROR] [TurnoController:61] Turno ocupado
+[2022-07-04 22:03:39] [ ERROR] [TurnoController:120] Turno ocupado

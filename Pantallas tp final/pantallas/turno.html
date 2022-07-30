@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacar nuevo turno</title>
+    <link rel="stylesheet" href="../estilos/turnoSty.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Odontológica</h1>
+        <div>
+            <p>Hola //nombre usuario//</p>
+            <button>log out</button>
+        </div>
+    </header>
+    <main>
+        <h2>Asigne turno al paciente</h2>
+        <form action="">
+            <div>
+                <label for="">Ingrese ID del paciente</label>
+                <input type="number">
+            </div>
+            <div>
+                <label for="">Ingrese ID del odontologo</label>
+                <input type="number">
+            </div>
+            <div>
+                <label for="">Ingrese el día y hora que quiere el turno</label>
+                <input type="datetime-local">
+            </div>
+            <div>
+                <button type="reset">Cancelar</button>
+                <button type="submit">Reservar</button>
+            </div>
+        </form>
+        <div class="reservado">este es el turno</div>
+    </main>
+</body>
+</html>

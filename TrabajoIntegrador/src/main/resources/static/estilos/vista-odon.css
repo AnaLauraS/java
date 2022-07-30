@@ -1,0 +1,190 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #040b18;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ebe18e;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  gap: 20px;
+}
+
+header div button {
+  padding: 5px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: #ebe18e;
+  border: none;
+}
+
+body {
+  background-color: #040b18;
+}
+
+main {
+  max-width: 99vw;
+  height: 92vh;
+  background-image: url(../img/usuario.jpg);
+  background-attachment: fixed;
+  overflow-y: hidden;
+  background-size: cover;
+  padding: 5px;
+  color: #522e0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h2 {
+  padding-top: 4%;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: white -2px -2px 5px;
+}
+
+main .entrada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .botones button {
+  width: 150px;
+  height: 65px;
+  border-radius: 10px;
+  background-color: #ebe18e;
+  border: none;
+  margin: 20px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #522e0d;
+}
+
+main form {
+  width: 70vw;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: rgba(129, 129, 129, 0.493);
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+main form h3 {
+  margin-bottom: 2%;
+}
+
+main form div {
+  padding: 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+main form div input {
+  width: 25vw;
+  max-width: 200px;
+}
+
+main form button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ebe18e;
+  border: none;
+  margin: 20px;
+  font-size: 1.2rem;
+  color: #522e0d;
+}
+
+table {
+  margin-top: 2%;
+  width: 60vw;
+  font-size: 1.2rem;
+}
+
+thead {
+  background-color: #040b18;
+  color: #ebe18e;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  height: 2rem;
+}
+
+tbody tr:hover {
+  background-color: coral;
+}
+
+.icono:hover {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  text-shadow: white 2px 2px 5px;
+}
+
+#modificar {
+  display: none;
+}
+
+#nuevo {
+  display: auto;
+}
+
+#input1{
+    background: none;
+}
+
+button:hover {
+cursor:pointer;
+}

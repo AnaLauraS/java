@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de turnos</title>
+    <link rel="stylesheet" href="../static/estilos/vista-odon.css">
+
+  </head>
+<body>
+<header>
+  <h1>Clínica Odontológica</h1>
+  <div>
+    <p>Hola //nombre usuario//</p>
+    <button>log out</button>
+  </div>
+</header>
+<main>
+  <h2>Administración de turnos</h2>
+  <div class="entrada">
+    <div class="botones">
+      <button id="boton1">Administrar odontólogo</button>
+      <button id="boton2">Administrar pacientes</button>
+      <button id="boton3">Nuevo turno</button>
+    </div>
+    <div id="nuevo">
+      <form action="" id="formNew">
+        <h3>Ingrese los datos de un nuevo turno</h3>
+        <div>
+          <label for="input1">Ingrese ID del turno</label>
+          <input type="number" id="input1" readonly>
+        </div>
+        <div>
+          <label for="input2">Ingrese el ID del odontólogo</label>
+          <input type="number" id="input2">
+        </div>
+        <div>
+          <label for="input3">Ingrese el ID del paciente</label>
+          <input type="number" id="input3">
+        </div>
+        <div>
+          <label for="input4">Ingrese fecha y hora</label>
+          <input type="datetime-local" id="input4">
+        </div>
+        <div>
+          <button type="reset">Cancelar</button>
+          <button type="submit">Guardar</button>
+        </div>
+      </form>
+    </div>
+    <div id="modificar">
+      <form action="" id="formMod">
+        <h3>Modifique los datos del turno</h3>
+        <div>
+          <label for="input5">Ingrese ID del turno</label>
+          <input type="number" id="input5" readonly>
+        </div>
+        <div>
+          <label for="input6">Ingrese el ID del odontólogo</label>
+          <input type="number" id="input6">
+        </div>
+        <div>
+          <label for="input7">Ingrese el ID del paciente</label>
+          <input type="number" id="input7">
+        </div>
+        <div>
+          <label for="input8">Ingrese fecha y hora</label>
+          <input type="datetime-local" id="input8">
+        </div>
+        <div>
+          <button type="reset">Cancelar</button>
+          <button type="submit">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <table id="odonTable">
+    <thead>
+    <tr>
+      <th></th>
+      <th>Id</th>
+      <th>Id odontólogo</th>
+      <th>Id paciente</th>
+      <th>Fecha y hora</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody id="odonTableBody">
+
+    </tbody>
+  </table>
+  <script src="../static/js/vista-turno.js"></script>
+</main>
+</body>
+</html>

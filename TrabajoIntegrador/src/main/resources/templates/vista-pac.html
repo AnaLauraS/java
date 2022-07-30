@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de pacientes</title>
+    <link rel="stylesheet" href="../static/estilos/vista-odon.css">
+</head>
+<body>
+<header>
+    <h1>Clínica Odontológica</h1>
+    <div>
+        <p>Hola //nombre usuario//</p>
+        <button>log out</button>
+    </div>
+</header>
+<main>
+    <h2>Administración de pacientes</h2>
+    <div class="entrada">
+        <div class="botones">
+            <button id="boton1">Administrar turnos</button>
+            <button id="boton2">Administrar odontólogos</button>
+            <button id="boton3">Nuevo paciente</button>
+        </div>
+        <div id="nuevo">
+            <form action="" id="formNew">
+                <h3>Ingrese los datos de un nuevo paciente</h3>
+                <div>
+                    <label for="input1">Ingrese ID del paciente</label>
+                    <input type="number" id="input1" readonly>
+                </div>
+                <div>
+                    <label for="input2">Ingrese el nombre</label>
+                    <input type="text" id="input2">
+                </div>
+                <div>
+                    <label for="input3">Ingrese el apellido</label>
+                    <input type="text" id="input3">
+                </div>
+                <div>
+                    <label for="input4">Ingrese el domicilio</label>
+                    <input type="text" id="input4">
+                </div>
+                <div>
+                    <label for="input5">Ingrese el DNI</label>
+                    <input type="number" id="input5">
+                </div>
+                <div>
+                    <label for="input12">Ingrese fecha de alta</label>
+                    <input type="date" id="input12">
+                </div>
+                <div>
+                    <button type="reset">Cancelar</button>
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+        <div id="modificar">
+            <form action="" id="formMod">
+                <h3>Modifique los datos del paciente</h3>
+                <div>
+                    <label for="input6">Ingrese ID del odontólogo</label>
+                    <input type="number" id="input6" readonly>
+                </div>
+                <div>
+                    <label for="input7">Ingrese el nombre</label>
+                    <input type="text" id="input7">
+                </div>
+                <div>
+                    <label for="input8">Ingrese el apellido</label>
+                    <input type="text" id="input8">
+                </div>
+                <div>
+                    <label for="input9">Ingrese el domicilio</label>
+                    <input type="text" id="input9">
+                </div>
+                <div>
+                    <label for="input10">Ingrese el DNI</label>
+                    <input type="number" id="input10">
+                </div>
+                <div>
+                    <label for="input11">Ingrese fecha de alta</label>
+                    <input type="date" id="input11" readonly>
+                </div>
+                <div>
+                    <button type="reset">Cancelar</button>
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <table id="odonTable">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Domiclio</th>
+            <th>DNI</th>
+            <th>Alta</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="odonTableBody">
+
+        </tbody>
+    </table>
+    <script src="../static/js/vista-pac.js"></script>
+</main>
+</body>
+</html>
